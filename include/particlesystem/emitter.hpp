@@ -84,8 +84,8 @@ public:
         if(tick(dt)){
             for (int i = 0; i < amount; i++) {
                 
-                particle.velocity.y = (rand() / (float)(RAND_MAX)) * 2.0f - 1.0f;
-                particle.velocity.x = (rand() / (float)(RAND_MAX)) * 2.0f - 1.0f;
+                particle.velocity.y = float(cos(rand()));
+                particle.velocity.x = float(sin(rand()));
                 
                 particle.radius = 4;
                 

@@ -24,7 +24,7 @@ int main(int, char**) try {
     Color color = {1, 1, 1, 1};
     
     std::vector<Emitter*> emitters;
-    std::vector<Effect> effects;
+    std::vector<Effect*> effects;
     
     float prevTime = 0.0;
     bool running = true;
@@ -78,15 +78,24 @@ int main(int, char**) try {
             
             // ------------ EFFECTS ------------
             
+            float gravity;
+            window.sliderFloat("Select gravity", gravity, 0.0, 1000);
+            
              if (window.button("New Gravity well effect")) {
-                GravityWell GravityEff;
-                effects.push_back(GravityEff);
+                 GravityWell* newEffect = new GravityWell(gravity);
+                 newEffect->position = {0,0};
+                 effects.push_back(newEffect);
             }
             
-            if (window.button("New wind effect")) {
-                Wind WindEff;
-                effects.push_back(WindEff);
+            float power;
+            window.sliderFloat("Select power of wind", power, 0.0, 1000);
+            
+             if (window.button("New Wind effect")) {
+                 Wind* newEffect = new Wind(power);
+                 newEffect->position = {0,0};
+                 effects.push_back(newEffect);
             }
+            
             window.endGuiWindow();
         }
         
@@ -100,7 +109,11 @@ int main(int, char**) try {
         }
 
         // Update particles
-        particleSystem.update(effects, dt);
+        for(size_t i = 0; i < effects.size(); i++) { // Kan man göra såhär? 
+            particleSystem.useEffect(effects[i]);
+        }
+        
+        particleSystem.update(dt);
         
         // Render particles
         for (size_t i = 0; i < particleSystem.particles.size(); i++){

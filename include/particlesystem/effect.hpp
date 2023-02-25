@@ -9,23 +9,40 @@
 
 class Effect {
 public:
-    float strength = 0;
     glm::vec2 position = { 0, 0 };
+    
+    virtual void affectParticle(Particle particle) = 0;
 };
 
 class GravityWell : public Effect{
+    
 public:
-    GravityWell() : Effect(){
-        strength = 10;
-        position = {0,0};
+    GravityWell(float gravity) : Effect(), gravity(gravity){
     }
+    
+    void affectParticle(Particle particle) override{
+       
+    }
+   
+    float gravity;
 };
 
 class Wind : public Effect{
+    
 public:
-    Wind() : Effect(){
-        strength = 10;
-        position = {0,0};
+    Wind(float power) : Effect(), power(power){
     }
+    
+    void affectParticle(Particle particle) override{
+        
+        float dx = position.x - particle.position.x;
+        float dy = position.y - particle.position.y;
+        
+        particle.velocity.x += power * dx;
+        particle.velocity.y += power * dy;
+    }
+   
+    float power;
 };
 #endif
+
