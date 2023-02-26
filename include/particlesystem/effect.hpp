@@ -2,6 +2,8 @@
 #define effect_hpp
 
 #include "rendering/window.h"
+#include "particlesystem.h"
+#include <vector>
 #include "glm/vec2.hpp"
 #include "glm/vec4.hpp"
 #include "particle.hpp"
@@ -11,7 +13,7 @@ class Effect {
 public:
     glm::vec2 position = { 0, 0 };
     
-    virtual void affectParticle(Particle particle) = 0;
+    virtual void affectParticle(Effect* Eff, std::vector<Particle> &particles) = 0;
 };
 
 class GravityWell : public Effect{
@@ -20,7 +22,7 @@ public:
     GravityWell(float gravity) : Effect(), gravity(gravity){
     }
     
-    void affectParticle(Particle particle) override{
+    void affectParticle(Effect* Eff, std::vector<Particle> &particles) override{
        
     }
    
@@ -33,16 +35,23 @@ public:
     Wind(float power) : Effect(), power(power){
     }
     
-    void affectParticle(Particle particle) override{
+    void affectParticle(Effect* Eff, std::vector<Particle> &particles) override{
         
-        float dx = position.x - particle.position.x;
-        float dy = position.y - particle.position.y;
+        float dx;
+        float dy;
         
-        particle.velocity.x += power * dx;
-        particle.velocity.y += power * dy;
+        for(size_t i = 0; i < particles.size(); i++){
+            
+            dx = Eff->position.x - particles[i].position.x;
+            dy = Eff->position.y - particles[i].position.y;
+            
+            particles[i].velocity.x += power * dx;
+            particles[i].velocity.y += power * dy;
+    
+        }
     }
-   
     float power;
 };
-#endif
 
+
+#endif

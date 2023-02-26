@@ -109,9 +109,9 @@ int main(int, char**) try {
         }
 
         // Update particles
-        for(size_t i = 0; i < effects.size(); i++) { // Kan man göra såhär? 
-            particleSystem.useEffect(effects[i]);
-        }
+//        for(size_t i = 0; i < effects.size(); i++) { // Kan man göra såhär? 
+//            particleSystem.useEffect(effects[i], particleSystem.particles);
+//        }
         
         particleSystem.update(dt);
         

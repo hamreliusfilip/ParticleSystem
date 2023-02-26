@@ -42,6 +42,7 @@ public:
         delay = 0.1;
         
         if(tick(dt)){
+            
             particle.velocity.y = float(cos(angle));
             particle.velocity.x = float(sin(angle));
             particle.radius = 4;
