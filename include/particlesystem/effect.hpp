@@ -2,12 +2,14 @@
 #define effect_hpp
 
 #include "rendering/window.h"
-#include "particlesystem.h"
-#include <vector>
+
+#include "particle.hpp"
+
 #include "glm/vec2.hpp"
 #include "glm/vec4.hpp"
-#include "particle.hpp"
+
 #include <stdio.h>
+#include <vector>
 
 class Effect {
 public:
@@ -23,9 +25,20 @@ public:
     }
     
     void affectParticle(Effect* Eff, std::vector<Particle> &particles) override{
-       
+        
+        float dx;
+        float dy;
+        
+        for(size_t i = 0; i < particles.size(); i++){
+            
+            dx = Eff->position.x - particles[i].position.x;
+            dy = Eff->position.y - particles[i].position.y;
+            
+            particles[i].velocity.x += gravity * dx;
+            particles[i].velocity.y += gravity * dy;
+        }
     }
-   
+    
     float gravity;
 };
 

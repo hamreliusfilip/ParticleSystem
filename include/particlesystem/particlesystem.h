@@ -23,7 +23,7 @@ public:
     
     void createParticles(Emitter* E, float dt);
     
-    //void useEffect(Effect* Eff, std::vector<Particle> &particles);
+    void useEffect(Effect* Eff, std::vector<Particle> &particles);
     
     void update(float dt); 
 };
