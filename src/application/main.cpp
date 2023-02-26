@@ -68,7 +68,7 @@ int main(int, char**) try {
             
             // Explosion
             int value;
-            window.sliderInt("Select amount of particles", value, 1, 1000);
+            window.sliderInt("Select amount of particles", value, 1, 100);
             
             if (window.button("New explosion emitter")) {
                 Explosion* newEmitter = new Explosion(value); // Amount attribute
@@ -78,22 +78,24 @@ int main(int, char**) try {
             
             // ------------ EFFECTS ------------
             
+            // Gravity effect
             float gravity;
-            window.sliderFloat("Select gravity", gravity, 0.0, 1000);
+            window.sliderFloat("Select gravity", gravity, 0.0, 100);
             
-             if (window.button("New Gravity well effect")) {
-                 GravityWell* newEffect = new GravityWell(gravity);
-                 newEffect->position = {0,0};
-                 effects.push_back(newEffect);
+            if (window.button("New Gravity well effect")) {
+                GravityWell* newEffect = new GravityWell(gravity);
+                newEffect->position = {0,0};
+                effects.push_back(newEffect);
             }
             
+            // Wind effect
             float power;
-            window.sliderFloat("Select power of wind", power, 0.0, 1000);
+            window.sliderFloat("Select power of wind", power, 0.0, 10);
             
-             if (window.button("New Wind effect")) {
-                 Wind* newEffect = new Wind(power);
-                 newEffect->position = {0,0};
-                 effects.push_back(newEffect);
+            if (window.button("New Wind effect")) {
+                Wind* newEffect = new Wind(power);
+                newEffect->position = {0,0};
+                effects.push_back(newEffect);
             }
             
             window.endGuiWindow();
@@ -103,22 +105,18 @@ int main(int, char**) try {
         
         // ------------------------------ RENDER ------------------------------------
         
-        // Create particles for each emitter
         for (size_t i = 0; i < emitters.size(); i++){
+            for(size_t j = 0; j < effects.size(); j++){
+                effects[j]->affectParticle(effects[j], particleSystem.particles);
+            }
             particleSystem.createParticles(emitters[i], dt);
-        }
-
-        // Update particles
-        for(size_t i = 0; i < effects.size(); i++) { 
-            particleSystem.useEffect(effects[i], particleSystem.particles);
         }
         
         particleSystem.update(dt);
         
-        // Render particles
         for (size_t i = 0; i < particleSystem.particles.size(); i++){
-            Particle tempP = particleSystem.particles[i];
-            window.drawPoint(tempP.position, tempP.radius, color); 
+            color = {0.8+srnd(), 0.8+srnd(), 0.8+srnd(), 0.8+srnd()};
+            window.drawPoint(particleSystem.particles[i].position, particleSystem.particles[i].radius, color);
         }
         
         // -------------------------------------------------------------------------

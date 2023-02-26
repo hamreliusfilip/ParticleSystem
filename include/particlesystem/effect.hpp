@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <vector>
+#include <cmath>
 
 class Effect {
 public:
@@ -25,46 +26,40 @@ public:
     }
     
     void affectParticle(Effect* Eff, std::vector<Particle> &particles) override{
-        
-        float dx;
-        float dy;
+              
+        float dx, dy;
         
         for(size_t i = 0; i < particles.size(); i++){
-            
+
             dx = Eff->position.x - particles[i].position.x;
             dy = Eff->position.y - particles[i].position.y;
             
-            particles[i].velocity.x += gravity * dx;
-            particles[i].velocity.y += gravity * dy;
+            particles[i].velocity.x += gravity * float(0.001) * dx;
+            particles[i].velocity.y += gravity * float(0.001) * dy;
+            
         }
-    }
-    
-    float gravity;
+    }float gravity;
 };
 
 class Wind : public Effect{
-    
 public:
     Wind(float power) : Effect(), power(power){
     }
     
     void affectParticle(Effect* Eff, std::vector<Particle> &particles) override{
         
-        float dx;
-        float dy;
+        float differanceX, differanceY;
         
         for(size_t i = 0; i < particles.size(); i++){
             
-            dx = Eff->position.x - particles[i].position.x;
-            dy = Eff->position.y - particles[i].position.y;
+            differanceX = Eff->position.x - particles[i].position.x;
+            differanceY = Eff->position.y - particles[i].position.y;
             
-            particles[i].velocity.x += power * dx;
-            particles[i].velocity.y += power * dy;
-    
+            if(differanceX < 0.5 & differanceY < 0.5){
+                particles[i].velocity.x += float(0.001) * power;
+                particles[i].velocity.y += float(0.001) * power;
+            }
         }
-    }
-    float power;
+    }float power;
 };
-
-
 #endif

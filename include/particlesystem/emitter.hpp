@@ -19,16 +19,15 @@ public:
     double time;
     double delay;
     
-        bool tick(double dt) {
-            time += dt;
-            if(time > delay) {
-                time = 0;
-                return true;
-            }
-            return false;
-        }
+    bool tick(double dt) {
+        time += dt;
+        if(time > delay) {
+            time = 0;
+            return true;
+        }return false;
+    }
     
-    virtual void addParticle(std::vector<Particle> &particles,Particle particle, float dt) = 0;
+    virtual void addParticle(std::vector<Particle> &particles, Particle particle, float dt) = 0;
 };
 
 class Directional : public Emitter {
@@ -45,7 +44,8 @@ public:
             
             particle.velocity.y = float(cos(angle));
             particle.velocity.x = float(sin(angle));
-            particle.radius = 4;
+            
+            particle.radius = 6;
             
             particles.push_back(particle);
             
@@ -62,10 +62,11 @@ public:
         delay = 0.1; 
         
         if(tick(dt)){
+            
             particle.velocity.y = float(cos(rand()));
             particle.velocity.x = float(sin(rand()));
             
-            particle.radius = 4;
+            particle.radius = 6;
             
             particles.push_back(particle);
         }
@@ -80,7 +81,7 @@ public:
     
     void addParticle(std::vector<Particle> &particles, Particle particle, float dt) override {
         
-        delay = 0.1;
+        delay = 3;
         
         if(tick(dt)){
             for (int i = 0; i < amount; i++) {
@@ -88,7 +89,7 @@ public:
                 particle.velocity.y = float(cos(rand()));
                 particle.velocity.x = float(sin(rand()));
                 
-                particle.radius = 4;
+                particle.radius = 6;
                 
                 particles.push_back(particle);
             }
