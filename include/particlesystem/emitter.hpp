@@ -54,7 +54,6 @@ public:
             particle.radius = 6;
             
             particles.push_back(particle);
-            
         }
     }
     float angle;
