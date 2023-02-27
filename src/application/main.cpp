@@ -65,7 +65,7 @@ int main(int, char**) try {
             window.sliderInt("Select amount of particles", value, 1, 100);
             
             if (window.button("New explosion emitter")) {
-                Explosion* newEmitter = new Explosion(value); // Amount attribute
+                Explosion* newEmitter = new Explosion(value);
                 newEmitter->position = {0,0};
                 emitters.push_back(newEmitter);
             }
@@ -101,8 +101,8 @@ int main(int, char**) try {
         
         for (size_t i = 0; i < emitters.size(); i++){
             for(size_t j = 0; j < effects.size(); j++){
-                effects[j]->affectParticle(effects[j], particleSystem.particles);
-            }emitters[i]->addParticle(particleSystem.particles,emitters[i],dt);
+                effects[j]->affectParticle(particleSystem.particles);
+            }emitters[i]->addParticle(particleSystem.particles,dt);
         }
         
         particleSystem.update(dt);
