@@ -42,8 +42,10 @@ public:
         
         if(tick(dt)){
             
-            particle.velocity.y = float(cos(angle));
-            particle.velocity.x = float(sin(angle));
+            particle.color = {1, 1, 1, 1};
+            
+            particle.velocity.y = float(sin(angle));
+            particle.velocity.x = float(cos(angle));
             
             particle.radius = 6;
             
@@ -63,8 +65,10 @@ public:
         
         if(tick(dt)){
             
-            particle.velocity.y = float(cos(rand()));
-            particle.velocity.x = float(sin(rand()));
+            particle.color = {1, 1, 1, 1};
+            
+            particle.velocity.y = float(sin(rand()));
+            particle.velocity.x = float(cos(rand()));
             
             particle.radius = 6;
             
@@ -81,10 +85,12 @@ public:
     
     void addParticle(std::vector<Particle> &particles, Particle particle, float dt) override {
         
-        delay = 3;
+        delay = 1;
         
         if(tick(dt)){
             for (int i = 0; i < amount; i++) {
+                
+                particle.color = {rand(),0,0,1};
                 
                 particle.velocity.y = float(cos(rand()));
                 particle.velocity.x = float(sin(rand()));
@@ -94,8 +100,7 @@ public:
                 particles.push_back(particle);
             }
         }
-    }
-    int amount;
+    }int amount;
 };
 
 #endif

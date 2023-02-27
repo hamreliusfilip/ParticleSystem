@@ -12,16 +12,10 @@
 using vec4 = Color;
 constexpr float Pi = 3.141592654f;
 
-float rnd() { return rand() / static_cast<float>(RAND_MAX); }
-
-float srnd() { return rnd() * 2.0f - 1.0f; }
-
 int main(int, char**) try {
     rendering::Window window("Particle System v0.0.1 pre-release alpha", 850, 850);
     
     ParticleSystem particleSystem;
-    
-    Color color = {1, 1, 1, 1};
     
     std::vector<Emitter*> emitters;
     std::vector<Effect*> effects;
@@ -115,8 +109,9 @@ int main(int, char**) try {
         particleSystem.update(dt);
         
         for (size_t i = 0; i < particleSystem.particles.size(); i++){
-            color = {0.8+srnd(), 0.8+srnd(), 0.8+srnd(), 0.8+srnd()};
-            window.drawPoint(particleSystem.particles[i].position, particleSystem.particles[i].radius, color);
+            window.drawPoint(particleSystem.particles[i].position,
+                             particleSystem.particles[i].radius,
+                             particleSystem.particles[i].color);
         }
         
         // -------------------------------------------------------------------------
