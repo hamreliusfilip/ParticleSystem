@@ -102,8 +102,7 @@ int main(int, char**) try {
         for (size_t i = 0; i < emitters.size(); i++){
             for(size_t j = 0; j < effects.size(); j++){
                 effects[j]->affectParticle(effects[j], particleSystem.particles);
-            }
-            particleSystem.createParticles(emitters[i], dt);
+            }emitters[i]->addParticle(particleSystem.particles,emitters[i],dt);
         }
         
         particleSystem.update(dt);

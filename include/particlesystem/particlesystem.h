@@ -21,8 +21,6 @@ public:
     
     std::vector<Particle> particles;
     
-    void createParticles(Emitter* E, float dt);
-    
     void update(float dt); 
 };
 

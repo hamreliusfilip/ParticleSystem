@@ -27,7 +27,7 @@ public:
         }return false;
     }
     
-    virtual void addParticle(std::vector<Particle> &particles, Particle particle, float dt) = 0;
+    virtual void addParticle(std::vector<Particle> &particles, Emitter* E, float dt) = 0;
 };
 
 class Directional : public Emitter {
@@ -36,13 +36,17 @@ public:
        Directional(float angle) : Emitter(), angle(angle) {
       }
     
-    void addParticle(std::vector<Particle> &particles, Particle particle, float dt) override {
+    void addParticle(std::vector<Particle> &particles, Emitter* E, float dt) override {
         
         delay = 0.1;
         
+        Particle particle;
+        particle.position = {E->position.x, E->position.y};
+        particle.lifetime = 5;
+        
         if(tick(dt)){
             
-            particle.color = {1, 1, 1, 1};
+            particle.color = {0, 1, 1, 1};
             
             particle.velocity.y = float(sin(angle));
             particle.velocity.x = float(cos(angle));
@@ -59,13 +63,17 @@ public:
 class Uniform : public Emitter {
     
 public:
-    void addParticle(std::vector<Particle> &particles,Particle particle, float dt) override {
+    void addParticle(std::vector<Particle> &particles, Emitter* E, float dt) override {
         
-        delay = 0.1; 
+        delay = 0.1;
+        
+        Particle particle;
+        particle.position = {E->position.x, E->position.y};
+        particle.lifetime = 5;
         
         if(tick(dt)){
             
-            particle.color = {1, 1, 1, 1};
+            particle.color = {0.3,0.7,0.1,1};
             
             particle.velocity.y = float(sin(rand()));
             particle.velocity.x = float(cos(rand()));
@@ -83,9 +91,13 @@ public:
     Explosion(int amount) : Emitter(), amount(amount) {
    }
     
-    void addParticle(std::vector<Particle> &particles, Particle particle, float dt) override {
+    void addParticle(std::vector<Particle> &particles, Emitter* E, float dt) override {
         
         delay = 1;
+        
+        Particle particle;
+        particle.position = {E->position.x, E->position.y};
+        particle.lifetime = 5;
         
         if(tick(dt)){
             for (int i = 0; i < amount; i++) {
