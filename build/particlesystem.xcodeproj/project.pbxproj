@@ -1,0 +1,1483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		83A6B24543CD481DA3CAB5E3 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D1670BCB3320460D8F26379D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		9BB7CC89F541457EB4E82DEE /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1E71FA8D09CB46BA91B03FFC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				22469F63D92AF52E55280296 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				77A977D8C7714E43A2CC9106 /* PBXTargetDependency */,
+				4F761CAF8CB642EC85FE5CD1 /* PBXTargetDependency */,
+				40C587E55C2A41F3B0BD7C08 /* PBXTargetDependency */,
+				4F478AF87E6B48A09134A2D3 /* PBXTargetDependency */,
+				06CDDFC6B89F404FAB16796D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		FEA2C9B94DED4EB29AA2B84C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BF73DE10D6A04B40A233E18C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				25B7FCEE384B7B5CD5DE8664 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1018F3E57C934AF984E45301 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/vec2.cpp */ = {isa = PBXBuildFile; fileRef = 0314F2A13982493AA65CC7BC /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/vec2.cpp */; };
+		1CCFA81983A84A14AA962DDC /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particle.cpp */ = {isa = PBXBuildFile; fileRef = D4DCE9CA1AAE4A8AB4412DFE /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particle.cpp */; };
+		28013AA6057B438391A7F1F8 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/emitter.cpp */ = {isa = PBXBuildFile; fileRef = A0F394E1CB00401191B9FE63 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/emitter.cpp */; };
+		2888B600360B48828E65ABF3 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/rendering/window.h */ = {isa = PBXBuildFile; fileRef = 6B2086FBD67E43D9A2BB120D /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/rendering/window.h */; };
+		3DBEE75EBF1B45E29F3E3C2B /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particlesystem.cpp */ = {isa = PBXBuildFile; fileRef = 060D895463644594A7D17D17 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particlesystem.cpp */; };
+		42FF8C88AA8F4A35BC097731 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/othertests.cpp */ = {isa = PBXBuildFile; fileRef = 91556B2AC1FB4F0694A43EFD /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/othertests.cpp */; };
+		44713FD2A27E4C04AF356E8C /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/particlesystem.h */ = {isa = PBXBuildFile; fileRef = 0CC223A5C01F4616B26F3CB2 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/particlesystem.h */; };
+		47B27F9AF87E446BA0CDF809 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/effect.hpp */ = {isa = PBXBuildFile; fileRef = 2C48786E6F6F49E6995586C7 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/effect.hpp */; };
+		4C200FB95817447999FBC707 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/rendering/window.cpp */ = {isa = PBXBuildFile; fileRef = 2EC0CB165CD540C88D2D7376 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/rendering/window.cpp */; };
+		6FA225886F274CF6B5A5B4A1 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D4C67AA6A58B4C29875478F9 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */; };
+		8AFF274F4D8F44148D92682F /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 87A5DFE2228C4FA793880E81 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */; };
+		9FE88E2424B94F959D5F5EC8 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/particle.hpp */ = {isa = PBXBuildFile; fileRef = 249B2B648C02452987466494 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/particle.hpp */; };
+		AACA34D750B24F82A1DB5180 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/emitter.hpp */ = {isa = PBXBuildFile; fileRef = CD2D80C959114EDDA1039B17 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/emitter.hpp */; };
+		CF16C91CB3B74B41AD8B9089 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E9279273DCFF41E6AE79518A /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */; };
+		D26EA3F2B5EF40EC91C4B2B8 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/application/main.cpp */ = {isa = PBXBuildFile; fileRef = 98755034FBDD4A52842D5D09 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/application/main.cpp */; };
+		D4E8CB92F7BE4245A42C7B14 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/effect.cpp */ = {isa = PBXBuildFile; fileRef = 67275894228445C99564EFE8 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/effect.cpp */; };
+		DF3AD4606896471C994288C4 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 104E8136ADF2440BADD39D29 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0B0932E4B16F4356BDE29015 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		1BE56F7B9F374364998394D9 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		5AB7218ABE3341CFAADB7CDC /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		9122491860EB451E9A88E1C2 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		216E40CC54594CC99BAA35D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B47EECED77473082F5268E;
+			remoteInfo = rendering;
+		};
+		470AC6377A614835997CB303 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEA2C9B94DED4EB29AA2B84C;
+			remoteInfo = ZERO_CHECK;
+		};
+		5738C596930241F1A759D58D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE36587C2C55444A87D876DA;
+			remoteInfo = particlesystem;
+		};
+		5AD3F896768C471380A5DB6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE36587C2C55444A87D876DA;
+			remoteInfo = particlesystem;
+		};
+		5EE3E56CD6104FADA13432C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2340E22E942C4ACEB09D1A8B;
+			remoteInfo = unittest;
+		};
+		7256C4C3D958478CA2B856B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEA2C9B94DED4EB29AA2B84C;
+			remoteInfo = ZERO_CHECK;
+		};
+		82F3129828A74108B277340E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B47EECED77473082F5268E;
+			remoteInfo = rendering;
+		};
+		8E699C167C6942FA937C843A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE36587C2C55444A87D876DA;
+			remoteInfo = particlesystem;
+		};
+		937E9582790045D69E738BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEA2C9B94DED4EB29AA2B84C;
+			remoteInfo = ZERO_CHECK;
+		};
+		93B6FC02359B4D51B7E8AF9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09A46808E7DA46DB9807E41B;
+			remoteInfo = application;
+		};
+		AF163A85A8764553A8A20CFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEA2C9B94DED4EB29AA2B84C;
+			remoteInfo = ZERO_CHECK;
+		};
+		F0D2622D5D774DF6A06C719C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2174239730CF4E5B9BF414AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEA2C9B94DED4EB29AA2B84C;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0314F2A13982493AA65CC7BC /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/vec2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vec2.cpp; path = unittest/vec2.cpp; sourceTree = SOURCE_ROOT; };
+		060D895463644594A7D17D17 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particlesystem.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = particlesystem.cpp; path = src/particlesystem/particlesystem.cpp; sourceTree = SOURCE_ROOT; };
+		0949D58EE9E447DE8F737500 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0CC223A5C01F4616B26F3CB2 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/particlesystem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = particlesystem.h; path = include/particlesystem/particlesystem.h; sourceTree = SOURCE_ROOT; };
+		104E8136ADF2440BADD39D29 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		249B2B648C02452987466494 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/particle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = particle.hpp; path = include/particlesystem/particle.hpp; sourceTree = SOURCE_ROOT; };
+		2C48786E6F6F49E6995586C7 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/effect.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = effect.hpp; path = include/particlesystem/effect.hpp; sourceTree = SOURCE_ROOT; };
+		2EC0CB165CD540C88D2D7376 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/rendering/window.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = window.cpp; path = src/rendering/window.cpp; sourceTree = SOURCE_ROOT; };
+		3CCF2DB12DEE49939CEACA01 /* rendering */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = librendering.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67275894228445C99564EFE8 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/effect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = effect.cpp; path = src/particlesystem/effect.cpp; sourceTree = SOURCE_ROOT; };
+		6B2086FBD67E43D9A2BB120D /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/rendering/window.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = window.h; path = include/rendering/window.h; sourceTree = SOURCE_ROOT; };
+		87A5DFE2228C4FA793880E81 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		91556B2AC1FB4F0694A43EFD /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/othertests.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = othertests.cpp; path = unittest/othertests.cpp; sourceTree = SOURCE_ROOT; };
+		98755034FBDD4A52842D5D09 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/application/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/application/main.cpp; sourceTree = SOURCE_ROOT; };
+		A0F394E1CB00401191B9FE63 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/emitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emitter.cpp; path = src/particlesystem/emitter.cpp; sourceTree = SOURCE_ROOT; };
+		B7B52665347B44138076D5E0 /* application */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = application; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2D80C959114EDDA1039B17 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/emitter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = emitter.hpp; path = include/particlesystem/emitter.hpp; sourceTree = SOURCE_ROOT; };
+		D32100E20F884B89B8D6E531 /* particlesystem */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libparticlesystem.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C67AA6A58B4C29875478F9 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D4DCE9CA1AAE4A8AB4412DFE /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = particle.cpp; path = src/particlesystem/particle.cpp; sourceTree = SOURCE_ROOT; };
+		DB8939786DB347D7B452E974 /* unittest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = unittest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9279273DCFF41E6AE79518A /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07FE78207CE541AFBBAE8506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B7B2E486FB44082A511FC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A93EFC30C8402DBD26D1A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1516F95EF14A109713201D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B3646C3F664B61B53067AE /* application */ = {
+			isa = PBXGroup;
+			children = (
+				87A5DFE2228C4FA793880E81 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */,
+				98755034FBDD4A52842D5D09 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/application/main.cpp */,
+			);
+			name = application;
+			sourceTree = "<group>";
+		};
+		336E74C14B7D4AD19AA936D7 = {
+			isa = PBXGroup;
+			children = (
+				C40D0841ADB142C6A13F1C6B /* rendering */,
+				E4786BC2E3834EC389FA4293 /* particlesystem */,
+				A2524CF71D754BDB87B05302 /* unittest */,
+				25B3646C3F664B61B53067AE /* application */,
+				3A2CC38FBE494B8FA6BDB18F /* ALL_BUILD */,
+				82A32CE8EBC34CE0B69A07F5 /* Products */,
+				E500B006895A4C6A8BD67675 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A2CC38FBE494B8FA6BDB18F /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				45C5ADA4E459402791910853 /* CMake Rules */,
+				0949D58EE9E447DE8F737500 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		45C5ADA4E459402791910853 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		82A32CE8EBC34CE0B69A07F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7B52665347B44138076D5E0 /* application */,
+				D32100E20F884B89B8D6E531 /* particlesystem */,
+				3CCF2DB12DEE49939CEACA01 /* rendering */,
+				DB8939786DB347D7B452E974 /* unittest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2524CF71D754BDB87B05302 /* unittest */ = {
+			isa = PBXGroup;
+			children = (
+				D4C67AA6A58B4C29875478F9 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */,
+				91556B2AC1FB4F0694A43EFD /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/othertests.cpp */,
+				0314F2A13982493AA65CC7BC /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/vec2.cpp */,
+			);
+			name = unittest;
+			sourceTree = "<group>";
+		};
+		C40D0841ADB142C6A13F1C6B /* rendering */ = {
+			isa = PBXGroup;
+			children = (
+				E9279273DCFF41E6AE79518A /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */,
+				6B2086FBD67E43D9A2BB120D /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/rendering/window.h */,
+				2EC0CB165CD540C88D2D7376 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/rendering/window.cpp */,
+			);
+			name = rendering;
+			sourceTree = "<group>";
+		};
+		E4786BC2E3834EC389FA4293 /* particlesystem */ = {
+			isa = PBXGroup;
+			children = (
+				104E8136ADF2440BADD39D29 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/CMakeLists.txt */,
+				2C48786E6F6F49E6995586C7 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/effect.hpp */,
+				CD2D80C959114EDDA1039B17 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/emitter.hpp */,
+				249B2B648C02452987466494 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/particle.hpp */,
+				0CC223A5C01F4616B26F3CB2 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/include/particlesystem/particlesystem.h */,
+				67275894228445C99564EFE8 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/effect.cpp */,
+				A0F394E1CB00401191B9FE63 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/emitter.cpp */,
+				D4DCE9CA1AAE4A8AB4412DFE /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particle.cpp */,
+				060D895463644594A7D17D17 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particlesystem.cpp */,
+			);
+			name = particlesystem;
+			sourceTree = "<group>";
+		};
+		E500B006895A4C6A8BD67675 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09A46808E7DA46DB9807E41B /* application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621F94D73AAE4679A497A12B /* Build configuration list for PBXNativeTarget "application" */;
+			buildPhases = (
+				D3B9547C9C5E4B5794149674 /* Sources */,
+				FE1516F95EF14A109713201D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B6CCFA71A34879B342FDA6 /* PBXTargetDependency */,
+				91D037758B734E889ED32317 /* PBXTargetDependency */,
+				3B415AC4F019493287D9069C /* PBXTargetDependency */,
+			);
+			name = application;
+			productName = application;
+			productReference = B7B52665347B44138076D5E0 /* application */;
+			productType = "com.apple.product-type.tool";
+		};
+		2340E22E942C4ACEB09D1A8B /* unittest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A6032417E24AF1B63F3C97 /* Build configuration list for PBXNativeTarget "unittest" */;
+			buildPhases = (
+				A879AD3FB63140B5850C22E7 /* Sources */,
+				70A93EFC30C8402DBD26D1A3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F196AF1AB548C7B576EA39 /* PBXTargetDependency */,
+				8F541F2A41774298B75B8213 /* PBXTargetDependency */,
+			);
+			name = unittest;
+			productName = unittest;
+			productReference = DB8939786DB347D7B452E974 /* unittest */;
+			productType = "com.apple.product-type.tool";
+		};
+		AE36587C2C55444A87D876DA /* particlesystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EB6B933B5442DCA04A1478 /* Build configuration list for PBXNativeTarget "particlesystem" */;
+			buildPhases = (
+				E9A0DE18675B4A6B855116D4 /* Sources */,
+				4B7B2E486FB44082A511FC3C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDDAF4C9FD604861B622B752 /* PBXTargetDependency */,
+			);
+			name = particlesystem;
+			productName = particlesystem;
+			productReference = D32100E20F884B89B8D6E531 /* particlesystem */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4B47EECED77473082F5268E /* rendering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7522F0DD297F4A2CAAE223D3 /* Build configuration list for PBXNativeTarget "rendering" */;
+			buildPhases = (
+				70166B00D97A426195673941 /* Sources */,
+				07FE78207CE541AFBBAE8506 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAD5A5ACA6EB46DF982EFFA7 /* PBXTargetDependency */,
+			);
+			name = rendering;
+			productName = rendering;
+			productReference = 3CCF2DB12DEE49939CEACA01 /* rendering */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2174239730CF4E5B9BF414AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = 7D0E9F93D230440CA688C840 /* Build configuration list for PBXProject "particlesystem" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				0B0932E4B16F4356BDE29015 /* Debug */,
+				9122491860EB451E9A88E1C2 /* Release */,
+				1BE56F7B9F374364998394D9 /* MinSizeRel */,
+				5AB7218ABE3341CFAADB7CDC /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 336E74C14B7D4AD19AA936D7;
+			projectDirPath = /Users/filiphamrelius/Documents/TNM094/particlesystem;
+			projectRoot = "";
+			targets = (
+				9BB7CC89F541457EB4E82DEE /* ALL_BUILD */,
+				83A6B24543CD481DA3CAB5E3 /* RUN_TESTS */,
+				FEA2C9B94DED4EB29AA2B84C /* ZERO_CHECK */,
+				09A46808E7DA46DB9807E41B /* application */,
+				AE36587C2C55444A87D876DA /* particlesystem */,
+				F4B47EECED77473082F5268E /* rendering */,
+				2340E22E942C4ACEB09D1A8B /* unittest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		22469F63D92AF52E55280296 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/filiphamrelius/Documents/TNM094/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		25B7FCEE384B7B5CD5DE8664 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/filiphamrelius/Documents/TNM094/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  make -f /Users/filiphamrelius/Documents/TNM094/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  make -f /Users/filiphamrelius/Documents/TNM094/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  make -f /Users/filiphamrelius/Documents/TNM094/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/filiphamrelius/Documents/TNM094/build
+  make -f /Users/filiphamrelius/Documents/TNM094/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70166B00D97A426195673941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C200FB95817447999FBC707 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/rendering/window.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A879AD3FB63140B5850C22E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FF8C88AA8F4A35BC097731 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/othertests.cpp */,
+				1018F3E57C934AF984E45301 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/unittest/vec2.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B9547C9C5E4B5794149674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26EA3F2B5EF40EC91C4B2B8 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/application/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9A0DE18675B4A6B855116D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E8CB92F7BE4245A42C7B14 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/effect.cpp */,
+				28013AA6057B438391A7F1F8 /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/emitter.cpp */,
+				1CCFA81983A84A14AA962DDC /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particle.cpp */,
+				3DBEE75EBF1B45E29F3E3C2B /* /Users/filiphamrelius/Documents/TNM094/particlesystem/src/particlesystem/particlesystem.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01B6CCFA71A34879B342FDA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B47EECED77473082F5268E /* rendering */;
+			targetProxy = 216E40CC54594CC99BAA35D6 /* PBXContainerItemProxy */;
+		};
+		06CDDFC6B89F404FAB16796D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEA2C9B94DED4EB29AA2B84C /* ZERO_CHECK */;
+			targetProxy = 470AC6377A614835997CB303 /* PBXContainerItemProxy */;
+		};
+		19F196AF1AB548C7B576EA39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE36587C2C55444A87D876DA /* particlesystem */;
+			targetProxy = 5AD3F896768C471380A5DB6C /* PBXContainerItemProxy */;
+		};
+		3B415AC4F019493287D9069C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEA2C9B94DED4EB29AA2B84C /* ZERO_CHECK */;
+			targetProxy = 7256C4C3D958478CA2B856B9 /* PBXContainerItemProxy */;
+		};
+		40C587E55C2A41F3B0BD7C08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2340E22E942C4ACEB09D1A8B /* unittest */;
+			targetProxy = 5EE3E56CD6104FADA13432C4 /* PBXContainerItemProxy */;
+		};
+		4F478AF87E6B48A09134A2D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09A46808E7DA46DB9807E41B /* application */;
+			targetProxy = 93B6FC02359B4D51B7E8AF9B /* PBXContainerItemProxy */;
+		};
+		4F761CAF8CB642EC85FE5CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE36587C2C55444A87D876DA /* particlesystem */;
+			targetProxy = 8E699C167C6942FA937C843A /* PBXContainerItemProxy */;
+		};
+		77A977D8C7714E43A2CC9106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B47EECED77473082F5268E /* rendering */;
+			targetProxy = 82F3129828A74108B277340E /* PBXContainerItemProxy */;
+		};
+		8F541F2A41774298B75B8213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEA2C9B94DED4EB29AA2B84C /* ZERO_CHECK */;
+			targetProxy = AF163A85A8764553A8A20CFA /* PBXContainerItemProxy */;
+		};
+		91D037758B734E889ED32317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE36587C2C55444A87D876DA /* particlesystem */;
+			targetProxy = 5738C596930241F1A759D58D /* PBXContainerItemProxy */;
+		};
+		CDDAF4C9FD604861B622B752 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEA2C9B94DED4EB29AA2B84C /* ZERO_CHECK */;
+			targetProxy = F0D2622D5D774DF6A06C719C /* PBXContainerItemProxy */;
+		};
+		DAD5A5ACA6EB46DF982EFFA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEA2C9B94DED4EB29AA2B84C /* ZERO_CHECK */;
+			targetProxy = 937E9582790045D69E738BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EFBAA84ED9D46D8A3BD2F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		10CA6D70274C488093F283D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		17D06F7000E9411EB928A7BB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		180A4DE7B2F14670B71EB5E7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rendering;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/rendering.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1FF3BEC06A654581A7C3286C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/filiphamrelius/Documents/TNM094/build/build;
+			};
+			name = MinSizeRel;
+		};
+		27C73B7874744114A1909769 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LDFLAGS = ("'-fsanitize=address' -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/filiphamrelius/Documents/TNM094/build/MinSizeRel/libparticlesystem.a,/Users/filiphamrelius/Documents/TNM094/build/MinSizeRel/librendering.a,"/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libTracyClient.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libfmt.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libglad.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libimgui.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/application.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2F31D487806C4450A8755882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3157CBC34C804108BBB496AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LDFLAGS = ("'-fsanitize=address' -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/debug/lib/manual-link/libCatch2Maind.a",/Users/filiphamrelius/Documents/TNM094/build/Debug/libparticlesystem.a,"/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/debug/lib/libCatch2d.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/debug/lib/libTracyClient.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unittest;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/unittest.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		38FA8FE02DBD4864902EF274 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = particlesystem;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/particlesystem.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3E673BA14EAD4100A776AB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = /Users/filiphamrelius/Documents/TNM094/build/build;
+			};
+			name = Debug;
+		};
+		4463016285CC4849A1522894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		643091498CED4077BC0C17A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LDFLAGS = ("'-fsanitize=address' -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/manual-link/libCatch2Main.a",/Users/filiphamrelius/Documents/TNM094/build/Release/libparticlesystem.a,"/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libCatch2.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libTracyClient.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unittest;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/unittest.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		72BE063E128349A981E125B2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LDFLAGS = ("'-fsanitize=address' -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/manual-link/libCatch2Main.a",/Users/filiphamrelius/Documents/TNM094/build/MinSizeRel/libparticlesystem.a,"/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libCatch2.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libTracyClient.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unittest;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/unittest.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7D9D402B117E48168CDAE616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LDFLAGS = ("'-fsanitize=address' -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/filiphamrelius/Documents/TNM094/build/Debug/libparticlesystem.a,/Users/filiphamrelius/Documents/TNM094/build/Debug/librendering.a,"/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/debug/lib/libTracyClient.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/debug/lib/libfmtd.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/debug/lib/libglad.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/debug/lib/libimguid.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/debug/lib/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/application.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8D304B2FA746452582374733 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LDFLAGS = ("'-fsanitize=address' -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/manual-link/libCatch2Main.a",/Users/filiphamrelius/Documents/TNM094/build/RelWithDebInfo/libparticlesystem.a,"/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libCatch2.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libTracyClient.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = unittest;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/unittest.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9917CEED2C2C4D859CB9AA6F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rendering;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/rendering.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9AE30E949F454C94B732E697 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A8465FDB3A984CD6B889D68A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = particlesystem;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/particlesystem.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		ADFE05D194594FFA9563949E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B644E94B8CA84A9BBAA7C7F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rendering;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/rendering.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BB0A2E7D48524F94B474978B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = particlesystem;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/particlesystem.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D00C0AFBB4F044B8B60831AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = rendering;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/rendering.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D16E08F396D5408B87497C24 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/filiphamrelius/Documents/TNM094/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		DF232F22D2D14BCF81436129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E03514C99E0048138AB8F1FA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E03EB9012C4444368CBAAAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E2E811F75841499193321D6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LDFLAGS = ("'-fsanitize=address' -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/filiphamrelius/Documents/TNM094/build/Release/libparticlesystem.a,/Users/filiphamrelius/Documents/TNM094/build/Release/librendering.a,"/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libTracyClient.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libfmt.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libglad.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libimgui.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/application.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		ED3B71713C1F4D5698AA5728 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = particlesystem;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/particlesystem.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EE77C74CD1654F7CA1B3FE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/filiphamrelius/Documents/TNM094/build/build;
+			};
+			name = Release;
+		};
+		F5557F493EDE46D4B9E68DF7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F6608644199F4B0DB417D804 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/filiphamrelius/Documents/TNM094/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TRACY_ENABLE,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/filiphamrelius/Documents/TNM094/particlesystem/include,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++20' -Wall -Wextra -Wconversion '-fsanitize=address' ";
+				OTHER_LDFLAGS = ("'-fsanitize=address' -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/filiphamrelius/Documents/TNM094/build/RelWithDebInfo/libparticlesystem.a,/Users/filiphamrelius/Documents/TNM094/build/RelWithDebInfo/librendering.a,"/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libTracyClient.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libfmt.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libglad.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libimgui.a","/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/lib/libglfw3.a","-framework Cocoa","-framework IOKit","-framework CoreFoundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = application;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/filiphamrelius/Documents/TNM094/build/vcpkg_installed/x64-osx/include","$(inherited)");
+				TARGET_TEMP_DIR = "/Users/filiphamrelius/Documents/TNM094/build/build/application.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F98CB0088C9F430CB04C7205 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E71FA8D09CB46BA91B03FFC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFBAA84ED9D46D8A3BD2F1E /* Debug */,
+				DF232F22D2D14BCF81436129 /* Release */,
+				F5557F493EDE46D4B9E68DF7 /* MinSizeRel */,
+				F98CB0088C9F430CB04C7205 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		45A6032417E24AF1B63F3C97 /* Build configuration list for PBXNativeTarget "unittest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3157CBC34C804108BBB496AC /* Debug */,
+				643091498CED4077BC0C17A4 /* Release */,
+				72BE063E128349A981E125B2 /* MinSizeRel */,
+				8D304B2FA746452582374733 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		621F94D73AAE4679A497A12B /* Build configuration list for PBXNativeTarget "application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D9D402B117E48168CDAE616 /* Debug */,
+				E2E811F75841499193321D6E /* Release */,
+				27C73B7874744114A1909769 /* MinSizeRel */,
+				F6608644199F4B0DB417D804 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7522F0DD297F4A2CAAE223D3 /* Build configuration list for PBXNativeTarget "rendering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B644E94B8CA84A9BBAA7C7F7 /* Debug */,
+				D00C0AFBB4F044B8B60831AC /* Release */,
+				9917CEED2C2C4D859CB9AA6F /* MinSizeRel */,
+				180A4DE7B2F14670B71EB5E7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7D0E9F93D230440CA688C840 /* Build configuration list for PBXProject "particlesystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E673BA14EAD4100A776AB70 /* Debug */,
+				EE77C74CD1654F7CA1B3FE4C /* Release */,
+				1FF3BEC06A654581A7C3286C /* MinSizeRel */,
+				D16E08F396D5408B87497C24 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BF73DE10D6A04B40A233E18C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E03EB9012C4444368CBAAAA0 /* Debug */,
+				4463016285CC4849A1522894 /* Release */,
+				9AE30E949F454C94B732E697 /* MinSizeRel */,
+				E03514C99E0048138AB8F1FA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1670BCB3320460D8F26379D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F31D487806C4450A8755882 /* Debug */,
+				10CA6D70274C488093F283D9 /* Release */,
+				ADFE05D194594FFA9563949E /* MinSizeRel */,
+				17D06F7000E9411EB928A7BB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F5EB6B933B5442DCA04A1478 /* Build configuration list for PBXNativeTarget "particlesystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8465FDB3A984CD6B889D68A /* Debug */,
+				BB0A2E7D48524F94B474978B /* Release */,
+				38FA8FE02DBD4864902EF274 /* MinSizeRel */,
+				ED3B71713C1F4D5698AA5728 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2174239730CF4E5B9BF414AA /* Project object */;
+}
