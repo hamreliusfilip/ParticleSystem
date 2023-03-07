@@ -27,16 +27,17 @@ public:
     
     void affectParticle(std::vector<Particle> &particles) override{
               
-        float dx, dy;
+        float differanceX, differanceY;
         
         for(size_t i = 0; i < particles.size(); i++){
 
-            dx = position.x - particles[i].position.x;
-            dy = position.y - particles[i].position.y;
+            differanceX = position.x - particles[i].position.x;
+            differanceY = position.y - particles[i].position.y;
             
-            particles[i].velocity.x += gravity * float(0.001) * dx;
-            particles[i].velocity.y += gravity * float(0.001) * dy;
-            
+            if(differanceX < 1 & differanceY < 1){
+                particles[i].velocity.x += gravity * float(0.001) * differanceX;
+                particles[i].velocity.y += gravity * float(0.001) * differanceY;
+            }
         }
     }float gravity;
 };

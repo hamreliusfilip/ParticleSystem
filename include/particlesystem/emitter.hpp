@@ -38,20 +38,26 @@ public:
     
     void addParticle(std::vector<Particle> &particles, float dt) override {
         
-        delay = 0.1;
+        delay = 0.001;
         
         Particle particle;
-        particle.position = {position.x, position.y};
+        particle.position = {0.5,-0.5};
         particle.lifetime = 5;
         
         if(tick(dt)){
             
-            particle.color = {0, 1, 1, 1};
+            particle.color = {
+                rand() / (float)(RAND_MAX),
+                rand() / (float)(RAND_MAX),
+                rand() / (float)(RAND_MAX),
+                1
+                
+            };
             
             particle.velocity.y = float(sin(angle));
             particle.velocity.x = float(cos(angle));
             
-            particle.radius = 6;
+            particle.radius = float(4);
             
             particles.push_back(particle);
         }
@@ -64,20 +70,26 @@ class Uniform : public Emitter {
 public:
     void addParticle(std::vector<Particle> &particles, float dt) override {
         
-        delay = 0.1;
+        delay = 0.001;
         
         Particle particle;
-        particle.position = {position.x, position.y};
+        particle.position = {-0.5,0.5};
         particle.lifetime = 5;
         
         if(tick(dt)){
             
-            particle.color = {0.3,0.7,0.1,1};
+            particle.color = {
+                rand() / (float)(RAND_MAX),
+                rand() / (float)(RAND_MAX),
+                rand() / (float)(RAND_MAX),
+                1
+                
+            };
             
             particle.velocity.y = float(sin(rand()));
             particle.velocity.x = float(cos(rand()));
             
-            particle.radius = 6;
+            particle.radius = float(4);
             
             particles.push_back(particle);
         }
@@ -92,21 +104,27 @@ public:
     
     void addParticle(std::vector<Particle> &particles, float dt) override {
         
-        delay = 1;
+        delay = 0.01;
         
         Particle particle;
-        particle.position = {position.x, position.y};
+        particle.position = {0,0};
         particle.lifetime = 5;
+        
+        particle.color = {
+            rand() / (float)(RAND_MAX),
+            rand() / (float)(RAND_MAX),
+            rand() / (float)(RAND_MAX),
+            1
+            
+        };
         
         if(tick(dt)){
             for (int i = 0; i < amount; i++) {
                 
-                particle.color = {rand(),0,0,1};
-                
                 particle.velocity.y = float(cos(rand()));
                 particle.velocity.x = float(sin(rand()));
                 
-                particle.radius = 6;
+                particle.radius = float(4);
                 
                 particles.push_back(particle);
             }

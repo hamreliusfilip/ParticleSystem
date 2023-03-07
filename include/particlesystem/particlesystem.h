@@ -21,7 +21,10 @@ public:
     
     std::vector<Particle> particles;
     
-    void update(float dt); 
+    void update(float dt);
+    
+    std::vector<Emitter*> emitters;
+    std::vector<Effect*> effects;
 };
 
 #endif
