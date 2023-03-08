@@ -132,4 +132,11 @@ public:
     }int amount;
 };
 
+class TestEmitter : public Emitter {
+    
+public:
+    void addParticle(std::vector<Particle> &particles, float dt) override {
+        }
+};
+
 #endif
