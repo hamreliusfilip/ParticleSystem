@@ -60,6 +60,11 @@ int main(int, char**) try {
                 particleSystem.emitters.push_back(new Explosion(value));
             }
             
+             // Test emitter for catch2 test
+             // if (window.button("New test emitter")) {
+             //   particleSystem.emitters.push_back(new TestEmitter);
+             //}
+            
             // ------------ EFFECTS ------------
             
             // Gravity effect
