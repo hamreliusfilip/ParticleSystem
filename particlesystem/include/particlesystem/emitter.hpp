@@ -132,11 +132,29 @@ public:
     }int amount;
 };
 
-class TestEmitter : public Emitter {
-    
-public:
-    void addParticle(std::vector<Particle> &particles, float dt) override {
-        }
-};
+//class TestEmitter : public Emitter {
+
+//public:
+//    void addParticle(std::vector<Particle> &particles, float dt) override {
+
+//        delay = 0.01;
+//
+//        Particle particle;
+//        particle.position = {0,0};
+//        particle.lifetime = 5;
+
+//        if(tick(dt)){
+
+//            particle.color = {1,1,1,1};
+
+//particle.velocity.y = 5.5;
+//particle.velocity.x = 5.5;
+
+//particle.radius = float(4);
+
+//particles.push_back(particle);
+//}
+//}
+//};
 
 #endif
